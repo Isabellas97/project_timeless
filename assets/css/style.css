@@ -1,0 +1,283 @@
+@font-face {
+  font-family: Osti;
+  src: url("../font/OstrichSans-Light.otf");
+}
+h1 {
+  font-family: Osti;
+  color: white;
+  letter-spacing: 6vw;
+  font-size: 5rem;
+  opacity: 20%;
+}
+
+h2 {
+  font-family: Osti;
+  color: white;
+  letter-spacing: 1vw;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  font-weight: 100;
+  opacity: 80%;
+}
+
+h3 {
+  font-family: Osti;
+  color: white;
+  letter-spacing: 0.5vw;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 100;
+  opacity: 30%;
+}
+
+p {
+  font-family: helvetica;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 60%;
+}
+
+.cta {
+  letter-spacing: 0.3rem;
+  font-size: 0.9rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grey {
+  background-color: #1a1a1a;
+}
+
+.darkgrey {
+  background-color: #121212;
+}
+
+header .headerBigPic {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100vh;
+  background-image: url("../img/FJ_home_slider2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .headerBigPic img {
+  width: 20vw;
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+}
+header .headerBigPic h1 {
+  padding-bottom: 10vh;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience h3 {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+}
+.experience h2 {
+  margin-bottom: 7vh;
+  z-index: 3;
+}
+.experience .line {
+  height: 1.5px;
+  width: 60vw;
+  background-color: white;
+  opacity: 40%;
+  z-index: 1;
+}
+.experience img {
+  width: 20vw;
+  margin-top: -25vh;
+  margin-bottom: 3vh;
+  z-index: 2;
+}
+.experience p {
+  margin-bottom: 20vh;
+}
+
+.curated {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.curated h2 {
+  margin-top: 15vh;
+  margin-bottom: 7vh;
+}
+.curated p {
+  padding: 0 30vh;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20vh;
+}
+.curated div {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+.curated div img {
+  height: 30vh;
+  margin-bottom: 20vh;
+}
+.curated div .ring {
+  margin-top: -10vh;
+}
+
+.animatedLines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.animatedLines h2 {
+  padding-top: 15vh;
+  margin-bottom: 10vh;
+}
+.animatedLines p {
+  width: 80vw;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+.animatedLines .animation {
+  width: 100vw;
+  margin-bottom: 20vh;
+  overflow: hidden;
+}
+.animatedLines .animation .infiniteText {
+  text-align: start;
+  letter-spacing: 1.6rem;
+  font-size: 2rem;
+  margin-bottom: 1vh;
+  line-height: 2rem;
+}
+.animatedLines .animation .textAnimation:nth-of-type(1) {
+  opacity: 80%;
+  animation: slideText1 20s linear infinite;
+  white-space: nowrap;
+}
+.animatedLines .animation .textAnimation:nth-of-type(2) {
+  opacity: 60%;
+  opacity: 80%;
+  animation: slideText2 15s linear infinite;
+  white-space: nowrap;
+}
+.animatedLines .animation .textAnimation:nth-of-type(3) {
+  opacity: 40%;
+  animation: slideText3 12s linear infinite;
+  white-space: nowrap;
+}
+.animatedLines .animation .textAnimation:nth-of-type(4) {
+  opacity: 20%;
+  animation: slideText1 16s linear infinite;
+  white-space: nowrap;
+}
+@keyframes slideText1 {
+  0% {
+    transform: translateX(-100%); /* Startposition ganz rechts */
+  }
+  100% {
+    transform: translateX(100%); /* Endposition ganz links */
+  }
+}
+@keyframes slideText2 {
+  0% {
+    transform: translateX(-100%); /* Startposition ganz rechts */
+  }
+  100% {
+    transform: translateX(100%); /* Endposition ganz links */
+  }
+}
+@keyframes slideText3 {
+  0% {
+    transform: translateX(-100%); /* Startposition ganz rechts */
+  }
+  100% {
+    transform: translateX(-200%); /* Endposition ganz links */
+  }
+}
+
+.bigPicBG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../img/Imanoglou_About_Photo_4.jpg");
+  background-repeat: no-repeat;
+  background-size: 70vw;
+  background-position: center;
+}
+.bigPicBG article {
+  width: 50vw;
+  margin-top: -10vh;
+  background-color: rgba(128, 128, 128, 0.3);
+  padding: 3vh 3vw;
+  margin-left: 40vw;
+}
+.bigPicBG article h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: 3rem;
+  margin-bottom: 5vh;
+}
+.bigPicBG article p {
+  padding: 0 8vw 0 12vw;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  text-align: center;
+  margin-top: 10vh;
+}
+footer .clockGalery {
+  margin-top: -2vh;
+  margin-bottom: 15vh;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vw;
+}
+footer .clockGalery h2 {
+  letter-spacing: 0.2rem;
+  padding: 1vh 3vw;
+  margin-bottom: 2vh;
+}
+footer .clockGalery div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+footer .clockGalery div img {
+  width: 30vw;
+  height: 25vh;
+}
+footer .clockGalery div .description {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  padding: 0 1vw;
+  margin-bottom: 2vh;
+}
+
+/*# sourceMappingURL=style.css.map */
